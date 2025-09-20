@@ -10,6 +10,7 @@ INIMIGO_SPEED = 1.5
 HERO_MAX_HP = 100
 FPS = 60
 
+
 # Classe base
 class Personagem:
     def __init__(self, start_pos, speed, max_hp, sprite_sheet):
@@ -61,6 +62,7 @@ class Personagem:
             self.actor.image = 'dead'
             return True
         return False
+
 
 # Herói
 class Heroi(Personagem):
